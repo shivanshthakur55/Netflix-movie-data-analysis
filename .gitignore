@@ -1,0 +1,36 @@
+# Jupyter Notebook checkpoints (auto-saved temp files)
+.ipynb_checkpoints/
+
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment folders
+.venv/
+env/
+venv/
+
+# System/IDE files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# VS Code settings (optional)
+.vscode/
+
+# MacOS/Windows hidden files
+*.swp
+*.swo
+
+# Jupyter runtime and config
+*.egg-info/
+.ipython/
+.jupyter/
+
+# Logs and other clutter
+*.log
+
+# Environment variable files
+.env
