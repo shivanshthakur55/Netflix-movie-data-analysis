@@ -9,65 +9,60 @@ The analysis is implemented in a Jupyter Notebook using Python's data science st
 2)Understand the structure and statistics of the dataset                                                                                                                                       
 3)Categorize movies based on vote averages into meaningful labels like:                                                                                    
 
-NOT_POPULAR
-BELOW_AVERAGE
-AVERAGE
-POPULAR
+NOT_POPULAR                                                                                                                                                                                       
+BELOW_AVERAGE                                                                                                                                                                                       
+AVERAGE                                                                                                                                                                                           
+POPULAR                                                                                                                                                                                      
 
-4)Visualize the distribution of categories using bar plots                                                                                                                                
-5)Improve graph readability using custom Y-axis scaling and labels
+4)Visualize the distribution of categories using bar plots                                                                                                                                             5)Improve graph readability using custom Y-axis scaling and labels
 
 📁 Files Included
-File Name	                             Description
-netflixproject.ipynb	 Jupyter notebook containing code, visualizations, and explanations
-mymoviedb.csv	         Raw CSV data file (contains movie metadata)
+File Name	                             Description                                                                                                                                       
+netflixproject.ipynb	 Jupyter notebook containing code, visualizations, and explanations                                                                                                 
+mymoviedb.csv	         Raw CSV data file (contains movie metadata)                                                                                                                           
 
-🧰 Libraries Used
-pandas for data loading and manipulation
+🧰 Libraries Used                                                                                                                                                                                   
+pandas for data loading and manipulation                                                                                                                                                                 
+                                                                                                                                                                                                 
+matplotlib.pyplot for static visualizations                                                                                                                                                    
+                                                                                                                                                                                                  
+seaborn (optional for enhanced visuals)                                                                                                                                                      
+                                                                                                                                                                                                  
+📊 Key Features & Insights                                                                                                                                                                        
+Custom binning of numeric features using quartiles                                                                                                                                              
+                                                                                                                                                                                               
+Label-based categorization using pd.cut()                                                                                                                                                           
+                                                                                                                                                                                                      
+Clear histogram visualizations with customized Y-axis scaling                                                                                                                                        
+                                                                                                                                                                                                  
+Value count annotations on top of each bar for better understanding                                                                                                                               
+                                                                                                                                                                                                    
+🚀 How to Run                                                                                                                                                                                         
+Clone the repository or download the files                                                                                                                                                         
+                                                                                                                                                                                                    
+Ensure Python 3.10+ is installed                                                                                                                                                                     
+                                                                                                                                                                                                      
+Create a virtual environment (optional but recommended)                                                                                                                                       
+                                                                                                                                                                                              
+Install required libraries:                                                                                                                                                        
 
-matplotlib.pyplot for static visualizations
 
-seaborn (optional for enhanced visuals)
-
-📊 Key Features & Insights
-Custom binning of numeric features using quartiles
-
-Label-based categorization using pd.cut()
-
-Clear histogram visualizations with customized Y-axis scaling
-
-Value count annotations on top of each bar for better understanding
-
-📌 Example Visual
-python
-Copy code
-df["Vote_Average"].value_counts().plot(kind='bar', color='blue', edgecolor='black')
-plt.title("VOTE AVERAGE DISTRIBUTION")
-plt.ylabel("Number of Movies")
-plt.xlabel("Vote Average Category")
-plt.ylim(df["Vote_Average"].value_counts().min() * 0.95,
-         df["Vote_Average"].value_counts().max() * 1.05)
-plt.show()
-🚀 How to Run
-Clone the repository or download the files
-
-Ensure Python 3.10+ is installed
-
-Create a virtual environment (optional but recommended)
-
-Install required libraries:
-
-bash
-Copy code
-pip install pandas matplotlib seaborn
-Run netflixproject.ipynb in Jupyter Notebook or VS Code with Jupyter extension
-
-🤝 Contributions
-This is a student project developed for practice and learning. Contributions and feedback are welcome!
-
-📚 Future Enhancements
-Add genre-wise analysis
-
-Explore time-series trends of popularity and votes
-
-Build a simple content recommendation model based on ratings
+pip install pandas matplotlib seaborn                                                                                                                                                              
+Run netflixproject.ipynb in Jupyter Notebook or VS Code with Jupyter extension                                                                                                                    
+                                                                                                                                                                                                 
+🤝 Contributions                                                                                                                                                                                       
+This is a student project developed for practice and learning. Contributions and feedback are welcome!                                                                                                  
+                                                                                                                                                                                                     
+📚 Future Enhancements                                                                                                                                                                                
+Add genre-wise analysis                                                                                                                                                                           
+                                                                                                                                                                                   
+Explore time-series trends of popularity and votes                                                                                                                                                
+                                                                                                                                                                                            
+Build a simple content recommendation model based on ratings                                                                                                                                   
+DIRECTORY STRUCTURE                                                                                                                                                                                     
+Netflix-Movie-Data-Analysis/                                                                                                                                                                        
+├── mymoviedb.csv                # Dataset file containing Netflix movie data                                                                                                                         
+├── netflixproject.ipynb         # Main Jupyter Notebook to run the analysis                                                                                                          
+├── .gitignore                   # (Optional) File to exclude unnecessary files from Git                                                                                                     
+├── README.md                    # Project documentation                                                                                                                                  
+ 
