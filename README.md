@@ -5,16 +5,16 @@ This project performs an exploratory data analysis (EDA) and visualization on a 
 The analysis is implemented in a Jupyter Notebook using Python's data science stack, including Pandas, Matplotlib, and Seaborn.
 
 🧠 Key Objectives
-1)Load and preprocess a movie dataset from a CSV file
-2)Understand the structure and statistics of the dataset
-3)Categorize movies based on vote averages into meaningful labels like:
+1)Load and preprocess a movie dataset from a CSV file                                                                                                                                               
+2)Understand the structure and statistics of the dataset                                                                                                                                       
+3)Categorize movies based on vote averages into meaningful labels like:                                                                                    
 
 NOT_POPULAR
 BELOW_AVERAGE
 AVERAGE
 POPULAR
 
-4)Visualize the distribution of categories using bar plots
+4)Visualize the distribution of categories using bar plots                                                                                                                                
 5)Improve graph readability using custom Y-axis scaling and labels
 
 📁 Files Included
